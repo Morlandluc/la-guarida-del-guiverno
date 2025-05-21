@@ -1,0 +1,203 @@
+
+/*colores
+
+Marrón madera: #5C4033
+Verde oscuro: #2E4B3D
+Beige o hueso: #F5F0E1
+Blanco: #FFFFFF
+Gris piedra: #A9A9A9
+Dorado suave: #C9A648
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+  
+  body {
+    background-color: #F5F0E1;
+    color: #2E4B3D;
+    font-family: 'MedievalSharp', sans-serif;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #5C4033;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    width: 5rem ;
+    height: auto;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #C9A648;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #5C4033;
+    text-align: center;
+    margin-top: 2rem;
+    border-bottom: 2px dashed #A9A9A9;
+    padding-bottom: 0.5rem;
+  }
+  
+  section {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .banner img {
+    border: 4px solid #5C4033;
+    margin-bottom: 1rem;
+    box-shadow: 4px 4px 0 #A9A9A9;
+  }
+
+  .bienvenida {
+    background-color: #C9A648;
+  }
+
+  .cuadro-medieval {
+  background-color: #FFFFFF;
+  border: 3px solid #5C4033;
+  border-radius: 10px;
+  box-shadow: 6px 6px 0 #A9A9A9;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  height: 100%;
+  }
+
+
+  .llamada {
+    background-color: #C9A648;
+  }
+
+  .comunidad img{
+    width: 3rem ;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  .banner img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: center; 
+    border: 4px solid #5C4033;
+    box-shadow: 4px 4px 0 #A9A9A9;
+  }
+
+  .nosotros p {
+    margin-top: 1rem;
+  }
+   
+  .nosotros img {
+    width: 30rem ;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  .contenedor-galeria {
+    text-align: center;
+    padding: 1rem;
+  }
+  .contenedor-galeria p {
+    align-items: center;
+  }
+
+  .contenedor-galeria div {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .formulario-suscripcion img {
+    width: 20rem ;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  footer {
+    background-color: #5C4033;
+    color: #F5F0E1;
+    text-align: center;
+    padding: 1rem;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 0.9rem;
+    border-top: 2px #C9A648;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    box-shadow: inset 0 4px 4px -2px rgba(0,0,0,0.4);
+  }
+
+  .producto-card {
+  background-color: #C9A648;
+  border: 4px solid #5C4033;
+  box-shadow: 6px 6px 0 #A9A9A9;
+  border-radius: 12px;
+  font-family: 'MedievalSharp', cursive;
+  text-align: center;
+  padding: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.producto-card:hover {
+  transform: scale(1.02);
+}
+
+.producto-card img {
+  border-radius: 8px;
+  max-height: 250px;
+  object-fit: cover;
+  margin: 10px;
+}
+
+
+
+.producto-card h2 {
+  font-size: 1.5rem;
+  margin-top: 0.75rem;
+  color: #3b1f07;
+}
+
+.producto-card .card-text {
+  font-size: 1rem;
+  margin: 0.5rem 0 1rem;
+  color: #1a1a1a;
+}
+
+.precio {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #5C4033;
+  background-color: #fff8e1;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+
