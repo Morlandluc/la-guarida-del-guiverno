@@ -51,6 +51,34 @@ nav a:hover {
   color: var(--dorado);
 }
 
+.banner h1 {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #5c4033;
+  font-family: 'MedievalSharp', cursive;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px #a98c6f;
+  background: rgba(245, 241, 231, 0.7); /* fondo semi transparente */
+  padding: 0.3rem 1rem;
+  border-radius: 15px;
+}
+
+.banner img {
+  width: 100%;
+  max-height: 300px; /* limita la altura para que no quede tan alto */
+  object-fit: cover;
+  border-radius: 0 0 80px 80px / 0 0 40px 40px; /* curvas grandes abajo */
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.banner {
+  overflow: hidden; /* para que no se vea contenido fuera de los bordes curvos */
+  margin-bottom: 2rem;
+  position: relative;
+}
+
 h1 {
   font-size: 2rem;
   color: var(--marron);
@@ -118,8 +146,73 @@ footer {
   box-shadow: inset 0 4px 4px -2px rgba(0,0,0,0.4);
 }
 
+.productos h1 { 
+  text-align: center;
+  color: #5c4033;
+  font-family: 'MedievalSharp', cursive;
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px #a98c6f;
+  background: rgba(245, 241, 231, 0.7); /* fondo semi transparente */
+  padding: 0.3rem 1rem;
+  border-radius: 15px;
+}
 
+/* Estilo general para los cuadros con estilo medieval */
+.cuadro-medieval {
+  background-color: #f5f1e7;      /* Color crema suave */
+  border: 3px solid #5c4033;      /* Borde marrón oscuro */
+  border-radius: 15px;            /* Bordes redondeados */
+  padding: 20px;
+  box-shadow: 8px 8px 0px #a98c6f; /* Sombra tipo marco antiguo */
+  font-family: 'MedievalSharp', cursive;
+  color: #3e2f1c;                 /* Texto marrón oscuro */
+  transition: transform 0.3s ease;
+}
 
+.cuadro-medieval:hover {
+  transform: translateY(-5px);
+  box-shadow: 12px 12px 0px #a98c6f;
+}
+
+/* Títulos dentro de cuadros medievales */
+.cuadro-medieval h2 {
+  border-bottom: 2px dashed #a98c6f;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #5c4033;
+}
+
+/* Estilo para la lista de juegos destacados */
+.destacados ul li {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Imagen Instagram más chica y centrada */
+.comunidad img {
+  max-width: 80px;
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Botones estilo medieval con Bootstrap */
+.btn-outline-dark {
+  font-family: 'MedievalSharp', cursive;
+  font-weight: 700;
+  border-width: 2.5px;
+  border-color: #5c4033;
+  color: #5c4033;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+  background-color: #5c4033;
+  color: #f5f1e7;
+  border-color: #5c4033;
+}
 
 
 
