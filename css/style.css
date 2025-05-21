@@ -34,22 +34,27 @@ header {
   height: auto;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
+.navbar {
+  font-family: 'MedievalSharp', cursive;
+  background-color: #3e2c23 !important;
 }
 
-nav a {
-  color: var(--blanco);
-  text-decoration: none;
+.navbar .nav-link {
+  color: #f5f1e7 !important;
+  margin-left: 1rem;
+  font-size: 1.1rem;
+}
+
+.navbar .nav-link:hover {
+  color: #d4af7f !important;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.navbar-brand {
   font-weight: bold;
-  transition: color 0.3s ease;
+  color: #f5f1e7 !important;
 }
 
-nav a:hover {
-  color: var(--dorado);
-}
 
 .banner h1 {
   position: absolute;
