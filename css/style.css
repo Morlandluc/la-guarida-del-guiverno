@@ -1,203 +1,126 @@
-
-/*colores
-
-Marrón madera: #5C4033
-Verde oscuro: #2E4B3D
-Beige o hueso: #F5F0E1
-Blanco: #FFFFFF
-Gris piedra: #A9A9A9
-Dorado suave: #C9A648
-
-*/
+/* Colores medievales */
+:root {
+  --marron: #5C4033;
+  --verde-oscuro: #2E4B3D;
+  --beige: #F5F0E1;
+  --blanco: #FFFFFF;
+  --gris: #A9A9A9;
+  --dorado: #C9A648;
+}
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  }
-  
-  body {
-    background-color: #F5F0E1;
-    color: #2E4B3D;
-    font-family: 'MedievalSharp', sans-serif;
-    line-height: 1.6;
-  }
-  
-  header {
-    background-color: #5C4033;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+body {
+  background-color: var(--beige);
+  color: var(--verde-oscuro);
+  font-family: 'MedievalSharp', cursive;
+  line-height: 1.6;
+}
 
-  .logo {
-    width: 5rem ;
-    height: auto;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-  }
-  
-  nav a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  nav a:hover {
-    color: #C9A648;
-  }
-  
-  h1 {
-    font-size: 2rem;
-    color: #5C4033;
-    text-align: center;
-    margin-top: 2rem;
-    border-bottom: 2px dashed #A9A9A9;
-    padding-bottom: 0.5rem;
-  }
-  
-  section {
-    padding: 2rem;
-    text-align: center;
-  }
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .banner img {
-    border: 4px solid #5C4033;
-    margin-bottom: 1rem;
-    box-shadow: 4px 4px 0 #A9A9A9;
-  }
+header {
+  background-color: var(--marron);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .bienvenida {
-    background-color: #C9A648;
-  }
+.logo {
+  width: 5rem;
+  height: auto;
+}
 
-  .cuadro-medieval {
-  background-color: #FFFFFF;
-  border: 3px solid #5C4033;
-  border-radius: 10px;
-  box-shadow: 6px 6px 0 #A9A9A9;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  height: 100%;
-  }
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
 
+nav a {
+  color: var(--blanco);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
 
-  .llamada {
-    background-color: #C9A648;
-  }
+nav a:hover {
+  color: var(--dorado);
+}
 
-  .comunidad img{
-    width: 3rem ;
-    height: auto;
-    margin-top: 1rem;
-  }
+h1 {
+  font-size: 2rem;
+  color: var(--marron);
+  text-align: center;
+  margin-top: 2rem;
+  border-bottom: 2px dashed var(--gris);
+  padding-bottom: 0.5rem;
+}
 
-  .banner img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-    object-position: center; 
-    border: 4px solid #5C4033;
-    box-shadow: 4px 4px 0 #A9A9A9;
-  }
-
-  .nosotros p {
-    margin-top: 1rem;
-  }
-   
-  .nosotros img {
-    width: 30rem ;
-    height: auto;
-    margin-top: 1rem;
-  }
-
-  .contenedor-galeria {
-    text-align: center;
-    padding: 1rem;
-  }
-  .contenedor-galeria p {
-    align-items: center;
-  }
-
-  .contenedor-galeria div {
-    display: inline-block;
-    margin-right: 10px;
-  }
-
-  .formulario-suscripcion img {
-    width: 20rem ;
-    height: auto;
-    margin-top: 1rem;
-  }
-
-  footer {
-    background-color: #5C4033;
-    color: #F5F0E1;
-    text-align: center;
-    padding: 1rem;
-    font-family: 'MedievalSharp', cursive;
-    font-size: 0.9rem;
-    border-top: 2px #C9A648;
-    margin-top: 2rem;
-    margin-bottom: 0;
-    box-shadow: inset 0 4px 4px -2px rgba(0,0,0,0.4);
-  }
-
-  .producto-card {
-  background-color: #C9A648;
-  border: 4px solid #5C4033;
-  box-shadow: 6px 6px 0 #A9A9A9;
+.medieval-card {
+  background-color: var(--blanco);
+  border: 4px solid var(--marron);
   border-radius: 12px;
   font-family: 'MedievalSharp', cursive;
-  text-align: center;
-  padding: 0.5rem;
-  transition: transform 0.3s ease;
+  box-shadow: 4px 4px 0 var(--gris);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.producto-card:hover {
-  transform: scale(1.02);
+.medieval-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
 
-.producto-card img {
-  border-radius: 8px;
-  max-height: 250px;
+.medieval-card img {
+  height: 250px;
   object-fit: cover;
-  margin: 10px;
+  border-radius: 8px;
+  background-color: var(--blanco);
 }
 
-
-
-.producto-card h2 {
-  font-size: 1.5rem;
-  margin-top: 0.75rem;
-  color: #3b1f07;
+.medieval-card .card-title {
+  font-size: 1.3rem;
+  color: var(--marron);
 }
 
-.producto-card .card-text {
+.medieval-card .card-text {
   font-size: 1rem;
-  margin: 0.5rem 0 1rem;
-  color: #1a1a1a;
+  color: #333;
+  margin-top: 0.5rem;
 }
 
-.precio {
+.medieval-card .precio {
   font-weight: bold;
   font-size: 1.2rem;
-  color: #5C4033;
+  color: var(--marron);
   background-color: #fff8e1;
   padding: 0.5rem;
   border-radius: 6px;
 }
+
+.medieval-card .card-footer {
+  background: none;
+  border-top: none;
+  text-align: right;
+  padding-top: 0;
+}
+
+footer {
+  background-color: var(--marron);
+  color: var(--beige);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  box-shadow: inset 0 4px 4px -2px rgba(0,0,0,0.4);
+}
+
+
+
+
+
 
 
