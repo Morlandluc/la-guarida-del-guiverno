@@ -219,6 +219,76 @@ footer {
   border-color: #5c4033;
 }
 
+.nosotros-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f5f1e7;
+  border-radius: 20px;
+  font-family: 'MedievalSharp', cursive;
+  color: #5c4033;
+}
 
+.nosotros-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 
+.nosotros-texto h1 {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px #a98c6f;
+}
+
+.nosotros-imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nosotros-imagen img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.nosotros-imagen img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nosotros-imagen img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(169, 140, 111, 0.6);
+}
+
+.medieval-title {
+  font-family: 'MedievalSharp', cursive;
+  color: #5c4033;
+  text-shadow: 2px 2px 6px #c2b280;
+  border-bottom: 4px solid #a68c61;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.medieval-card {
+  border: 3px solid #8b5e3c;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #f5f1e7;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(92, 64, 51, 0.3);
+}
+
+.medieval-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(92, 64, 51, 0.5);
+}
+
+.medieval-card img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
 
