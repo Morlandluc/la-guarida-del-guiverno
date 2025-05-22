@@ -211,7 +211,7 @@ footer {
 
 /* Imagen Instagram más chica y centrada */
 .comunidad img {
-  max-width: 80px;
+  max-width: 50px;
   margin-top: 10px;
   display: block;
   margin-left: auto;
@@ -330,7 +330,3 @@ footer {
   object-fit: cover;
 }
 
-.medieval-:hover {
-  transform: scale(1.03);
-  box-shadow: 0 8px 16px rgba(92, 64, 51, 0.5);
-}
